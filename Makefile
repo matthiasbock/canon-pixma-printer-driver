@@ -2,7 +2,7 @@
 dirs = libs cngpij cngpijmnt pstocanonij backend backendnet cngpijmon/cnijnpr
 
 scripts=for dir in $(dirs); do\
-			(cd $$dir; make $$target)|| exit 1;\
+			(cd $$dir; if [ ! -e Makefile ]; then ./autogen.sh; fi; make $$target)|| exit 1;\
 		done
 
 all :
