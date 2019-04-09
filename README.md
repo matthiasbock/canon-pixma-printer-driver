@@ -17,6 +17,11 @@ The driver is provided in parts in binary form, other parts as source code.
 
 Many thanks to Canon for providing the contents of this repository under the terms and conditions of the GNU GPL.
 
+Please note, that due to the binaries in this repository for which Canon provided no source code, it is **not** possible to distribute driver packages compiled from this repository under the terms and conditions of the GNU GPL.
+Also, those said binaries are only provided for 32-bit and 64-bit x86 architectures.
+They will not run on any other architecture.
+Nor is it possible to fix any problems in them.
+
 # How to build a RPM package
 
 When you wish to build one printer driver package:
